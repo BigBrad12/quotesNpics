@@ -1,3 +1,5 @@
-<div class="min-h-screen bg-black">
-    <h1>Welcome to Devgion</h1>
-</div>
+
+<h1>Welcome to Devgion</h1>
+<%= link_to "Sign-up", users_sign_up_path %>
+<%= link_to "Sign-in", users_sign_in_path %>
+<%= link_to("Sign-out", users_sign_out_path, data: { turbo_method: :delete }) %>
