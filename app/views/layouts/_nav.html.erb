@@ -1,0 +1,21 @@
+<nav class="backdrop-blur-xl bg-gray-700/30 opacity-98 rounded-md h-32 px-6 py-2.5 sticky container m-auto top-2">
+  <div class="flex items-center justify-between mt-4">
+    <div>
+      <% if logged_in? %>
+      <span class="text-white pl-17"><%= @current_user.name %></span>
+        <span class="text-white pl-5"><%= link_to("Logout", users_sign_out_path, data: {turbo_method: :delete}, class: "hover-links")%></span>
+      <% else %>
+        <span class="text-white pl-2"><%= link_to("Sign-in", users_sign_in_path) %>
+        <span class="text-white pl-2"><%= link_to("Sign-up", users_sign_up_path) %>
+      <% end %>
+    </div>
+    <div class="p-4 self-center">
+      <h1>DEVGION</h1>
+    </div>
+    <div>
+      <button class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Get started</button>  
+    </div>
+  </div>
+</nav>
+
+

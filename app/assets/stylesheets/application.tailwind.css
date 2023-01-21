@@ -14,3 +14,12 @@
 h1, h2, h3, h4, h5, h6, p, strong, a {
   color: white;
 }
+h1 {
+  font-size: 36px;
+}
+.m-auto {
+  margin: auto;
+}
+.hover-links:hover {
+  color: rgb(37 99 235);
+}
