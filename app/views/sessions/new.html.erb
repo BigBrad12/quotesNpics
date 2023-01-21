@@ -1,0 +1,9 @@
+<h1>Sign-In</h1>
+
+<%= form_with(scope: :session, url: users_sign_in_path) do |f| %>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+    <%= f.password_field :password %>
+    <%= f.submit("Sign In", class: "text-white") %>
+<% end %>
+
