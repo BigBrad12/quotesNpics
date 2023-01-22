@@ -98,6 +98,7 @@ GEM
       reline (>= 0.3.1)
     erubi (1.12.0)
     excon (0.97.2)
+    ffi (1.15.5)
     ffi (1.15.5-x64-mingw-ucrt)
     fog-aws (3.15.0)
       fog-core (~> 2.1)
@@ -163,6 +164,8 @@ GEM
     nio4r (2.5.8)
     nokogiri (1.14.0-x64-mingw-ucrt)
       racc (~> 1.4)
+    nokogiri (1.14.0-x86_64-linux)
+      racc (~> 1.4)
     public_suffix (5.0.1)
     puma (5.6.5)
       nio4r (~> 2.0)
@@ -216,10 +219,13 @@ GEM
       activesupport (>= 5.2)
       sprockets (>= 3.0.0)
     sqlite3 (1.6.0-x64-mingw-ucrt)
+    sqlite3 (1.6.0-x86_64-linux)
     ssrf_filter (1.1.1)
     stimulus-rails (1.2.1)
       railties (>= 6.0.0)
     tailwindcss-rails (2.0.21-x64-mingw-ucrt)
+      railties (>= 6.0.0)
+    tailwindcss-rails (2.0.21-x86_64-linux)
       railties (>= 6.0.0)
     thor (1.2.1)
     timeout (0.3.1)
@@ -250,6 +256,7 @@ GEM
 
 PLATFORMS
   x64-mingw-ucrt
+  x86_64-linux
 
 DEPENDENCIES
   bcrypt
