@@ -8,4 +8,6 @@ Rails.application.routes.draw do
   post 'users/sign-up', to: 'users#create'
   post 'users/sign-in', to: 'sessions#create'
   delete 'users/sign-out', to: 'sessions#destroy'
+
+  post 'posts', to: 'posts#create'
 end

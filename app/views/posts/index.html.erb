@@ -1,7 +1,26 @@
 <% if logged_in? %>
 
- <%= render @posts %>
+  <%= render @posts %>
 
+<% end %>
+
+<%= form_with(model: @post, :html => { multipart: true }) do |f| %>
+
+    <div>
+      <%= f.label :quote, class: "text-white" %>
+      <%= f.text_field :quote %>
+    </div>
+
+    <%# change from text_field to file_field and specify what formats to accept for picture %>
+
+    <div>
+      <%= f.label :pic, class: "text-white" %>
+      <%= f.file_field :pic, accept: 'image/jpeg,image/jpg,image/gif,image/png' %>
+    </div>
+
+    <div>
+      <%= f.submit "POST", class: "text-white"%>
+    </div>
 <% end %>
 
 
