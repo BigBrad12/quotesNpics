@@ -20,6 +20,9 @@ gem "importmap-rails"
 gem 'tailwindcss-rails'
 gem 'bcrypt'
 gem 'carrierwave'
+gem 'image_magick'
+gem 'fog-aws'
+gem 'mini_magick'
 
 # Hotwire's SPA-like page accelerator [https://turbo.hotwired.dev]
 gem "turbo-rails"
