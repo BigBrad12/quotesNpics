@@ -1,30 +1,28 @@
-<% if logged_in? %>
 
-  <%= render @posts %>
+  <% if logged_in? %>
 
-<% end %>
+      <%= render @uppies %>
 
-<%= form_with(model: @post, :html => { multipart: true }) do |f| %>
+    <% end %>
 
-    <div>
-      <%= f.label :quote, class: "text-white" %>
-      <%= f.text_field :quote %>
-    </div>
+    <%= form_with(model: @uppy, :html => { multipart: true }, class: "mt-6") do |f| %>
 
-    <%# change from text_field to file_field and specify what formats to accept for picture %>
+        <div>
+          <%= f.label "Quote:", class: "text-white" %>
+          <%= f.text_field :body %>
+        </div>
 
-    <div>
-      <%= f.label :pic, class: "text-white" %>
-      <%= f.file_field :pic, accept: 'image/jpeg,image/jpg,image/gif,image/png' %>
-    </div>
+        <%# change from text_field to file_field and specify what formats to accept for picture %>
 
-    <div>
-      <%= f.submit "POST", class: "text-white"%>
-    </div>
-<% end %>
+        <div>
+          <%= f.label "Picture", class: "text-white" %>
+          <%= f.file_field :Wallpaper, accept: 'image/jpeg,image/jpg,image/gif,image/png' %>
+        </div>
 
-
-
+        <div>
+          <%= f.submit "Post", class: "text-white"%>
+        </div>
+  <% end %>
 
 
 
@@ -70,100 +68,103 @@
 
 
 
-<h1>t</h1>
-<h1>t</h1>
-<h1>t</h1>
-<h1>t</h1>
-<h1>t</h1>
-<h1>t</h1>
-<h1>t</h1>
-<h1>t</h1>
-<h1>t</h1>
-<h1>t</h1>
-<h1>t</h1>
-<h1>t</h1>
-<h1>t</h1>
-<h1>t</h1>
-<h1>t</h1>
-<h1>t</h1>
-<h1>t</h1>
-<h1>t</h1>
-<h1>t</h1>
-<h1>t</h1>
-<h1>t</h1>
-<h1>t</h1>
-<h1>t</h1>
-<h1>t</h1>
-<h1>t</h1>
-<h1>t</h1>
-<h1>t</h1>
-<h1>t</h1>
-<h1>t</h1>
-<h1>t</h1>
-<h1>t</h1>
-<h1>t</h1>
-<h1>t</h1>
-<h1>t</h1>
-<h1>t</h1>
-<h1>t</h1>
-<h1>t</h1>
-<h1>t</h1>
-<h1>t</h1>
-<h1>t</h1>
-<h1>t</h1>
-<h1>t</h1>
-<h1>t</h1>
-<h1>t</h1>
-<h1>t</h1>
-<h1>t</h1>
-<h1>t</h1>
-<h1>t</h1>
-<h1>t</h1>
-<h1>t</h1>
-<h1>t</h1>
-<h1>t</h1>
-<h1>t</h1>
-<h1>t</h1>
-<h1>t</h1>
-<h1>t</h1>
-<h1>t</h1>
-<h1>t</h1>
-<h1>t</h1>
-<h1>t</h1>
-<h1>t</h1>
-<h1>t</h1>
-<h1>t</h1>
-<h1>t</h1>
-<h1>t</h1>
-<h1>t</h1>
-<h1>t</h1>
-<h1>t</h1>
-<h1>t</h1>
-<h1>t</h1>
-<h1>t</h1>
-<h1>t</h1>
-<h1>t</h1>
-<h1>t</h1>
-<h1>t</h1>
-<h1>t</h1><h1>t</h1>
-<h1>t</h1>
-<h1>t</h1>
-<h1>t</h1>
-<h1>t</h1>
-<h1>t</h1>
-<h1>t</h1>
-<h1>t</h1>
-<h1>t</h1>
-<h1>t</h1>
-<h1>t</h1>
-<h1>t</h1>
-<h1>t</h1>
-<h1>t</h1>
-<h1>t</h1>
-<h1>t</h1>
-<h1>t</h1>
-<h1>t</h1>
-<h1>t</h1>
-<h1>t</h1>
-<h1>t</h1>
-<h1>t</h1>
+
+
+
+  <h1>t</h1>
+  <h1>t</h1>
+  <h1>t</h1>
+  <h1>t</h1>
+  <h1>t</h1>
+  <h1>t</h1>
+  <h1>t</h1>
+  <h1>t</h1>
+  <h1>t</h1>
+  <h1>t</h1>
+  <h1>t</h1>
+  <h1>t</h1>
+  <h1>t</h1>
+  <h1>t</h1>
+  <h1>t</h1>
+  <h1>t</h1>
+  <h1>t</h1>
+  <h1>t</h1>
+  <h1>t</h1>
+  <h1>t</h1>
+  <h1>t</h1>
+  <h1>t</h1>
+  <h1>t</h1>
+  <h1>t</h1>
+  <h1>t</h1>
+  <h1>t</h1>
+  <h1>t</h1>
+  <h1>t</h1>
+  <h1>t</h1>
+  <h1>t</h1>
+  <h1>t</h1>
+  <h1>t</h1>
+  <h1>t</h1>
+  <h1>t</h1>
+  <h1>t</h1>
+  <h1>t</h1>
+  <h1>t</h1>
+  <h1>t</h1>
+  <h1>t</h1>
+  <h1>t</h1>
+  <h1>t</h1>
+  <h1>t</h1>
+  <h1>t</h1>
+  <h1>t</h1>
+  <h1>t</h1>
+  <h1>t</h1>
+  <h1>t</h1>
+  <h1>t</h1>
+  <h1>t</h1>
+  <h1>t</h1>
+  <h1>t</h1>
+  <h1>t</h1>
+  <h1>t</h1>
+  <h1>t</h1>
+  <h1>t</h1>
+  <h1>t</h1>
+  <h1>t</h1>
+  <h1>t</h1>
+  <h1>t</h1>
+  <h1>t</h1>
+  <h1>t</h1>
+  <h1>t</h1>
+  <h1>t</h1>
+  <h1>t</h1>
+  <h1>t</h1>
+  <h1>t</h1>
+  <h1>t</h1>
+  <h1>t</h1>
+  <h1>t</h1>
+  <h1>t</h1>
+  <h1>t</h1>
+  <h1>t</h1>
+  <h1>t</h1>
+  <h1>t</h1>
+  <h1>t</h1>
+  <h1>t</h1><h1>t</h1>
+  <h1>t</h1>
+  <h1>t</h1>
+  <h1>t</h1>
+  <h1>t</h1>
+  <h1>t</h1>
+  <h1>t</h1>
+  <h1>t</h1>
+  <h1>t</h1>
+  <h1>t</h1>
+  <h1>t</h1>
+  <h1>t</h1>
+  <h1>t</h1>
+  <h1>t</h1>
+  <h1>t</h1>
+  <h1>t</h1>
+  <h1>t</h1>
+  <h1>t</h1>
+  <h1>t</h1>
+  <h1>t</h1>
+  <h1>t</h1>
+  <h1>t</h1>

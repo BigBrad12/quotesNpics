@@ -1,0 +1,13 @@
+<div id="<%= dom_id uppy %>">
+  <div class="container ml-52 mt-5 bg-black border border-white px-4 py-2 w-fit text-white">
+    <%= uppy.user.name %>:
+  </div>
+
+  <div class="container ml-52 bg-black border border-white px-4 py-2 w-fit h-fit text-white">
+    <%= uppy.body %>
+  </div>
+
+  <div class="container ml-52 bg-black border border-white w-fit h-fit text-white">
+    <%= image_tag uppy.wallpaper.url if uppy.wallpaper? %>
+  </div>
+</div>

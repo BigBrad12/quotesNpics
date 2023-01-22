@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  root 'posts#index'
+  resources :uppies
+  root 'uppies#index'
 
   # Users are here
   get 'users/sign-up', to: 'users#new'
@@ -9,5 +10,5 @@ Rails.application.routes.draw do
   post 'users/sign-in', to: 'sessions#create'
   delete 'users/sign-out', to: 'sessions#destroy'
 
-  post 'posts', to: 'posts#create'
+  post 'posts', to: 'uppies#create'
 end
