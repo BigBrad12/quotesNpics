@@ -1,12 +1,16 @@
+<%# Error displaying below %>
 <div class="w-full">
   <% if notice.present? %>
     <p class="ml-52 mt-4 py-2 px-3 bg-green-50 mb-5 text-green-500 font-medium rounded-lg inline-block" id="notice"><%= notice %></p>
   <% end %>
-
+  
+<%# Interating through all the posts and rendering the partial for it %>
   <div id="uppies" class="min-w-full">
     <%= render @uppies %>
   </div>
 </div>
+
+<%# Below is the form to add a Post to the Index Page %>
 
 <div class="border border-white py-4 px-4 w-fit h-fit mt-2 ml-52">
   <%= form_with(model: @uppy) do |form| %>

@@ -9,8 +9,8 @@
   <% end %>
 
   <% if uppy.wallpaper? %>
-    <div class="container ml-52 bg-black border border-white w-fit h-fit text-white">
-      <%= image_tag uppy.wallpaper.url if uppy.wallpaper? %>
-    </div>
+     <div class="container ml-52 bg-black border border-white w-fit h-fit text-white">
+        <a href="<%= uppy_path(uppy) %>"><%= image_tag uppy.wallpaper.url if uppy.wallpaper? %></a>
+     </div>
   <% end %>
 </div>

@@ -2,7 +2,7 @@ class ImageUploader < CarrierWave::Uploader::Base
   # Include RMagick or MiniMagick support:
   # include CarrierWave::RMagick
   include CarrierWave::MiniMagick
-  # process resize_to_limit: [1980, nil]
+  process resize_to_limit: [1980, nil]
 
 
   storage :file
